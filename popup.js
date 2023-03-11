@@ -18,4 +18,10 @@ chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
     console.log(debugUrl);
   }
 
+  else {
+    debugUrl.href = "#";
+    debugUrl.target = "_self"
+    debugUrl.textContent = "Not a youtube Shorts page"
+  }
+
 });
