@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Extension</title>
+  <title>My Popup Extension</title>
   <script src="popup.js"></script>
   <style>
     body {
+      background: #202020;
+      color: #dddddd;
       font-family: sans-serif;
       font-size: 16px;
       padding: 20px;
@@ -12,8 +14,8 @@
   </style>
 </head>
 <body>
-  <h3>Test</h3>
-  <p>This is a popup window.</p>
-  <p>ActiveURL: <span id="ActiveTab"></span></p>
+  <h3>My Extension</h3>
+  <p>Debugging:</p>
+  <div id="current-url"></div>
 </body>
 </html>
