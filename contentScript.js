@@ -1,19 +1,25 @@
-(() => {
-  let aTags, channelId;
-  currentUser = "";
+// if (typeof init === "undefined") {
+//   const init = function () {
+//     actionMenu = document.getElementById("actions");
+//     const newTabBtn = document.createElement("button");
+//     newTabBtn.innerHTML = "Open Tab";
+//     // newTabBtn.className = "newTabBtn"
+//     actionMenu.appendChild(newTabBtn);
+//   }
+  
+//   init();
+// }
 
-  chrome.runtime.onMessage.addListener((obj, sender, response) => {
-    const { type, value, user } = obj;
 
-    if (type === "NEW") {
-      currentUser = channelId;
-      newChannelLoaded();
-    }
 
-    const newChannelLoaded = () => {
-      const filterBtnExists = document.getElementById("myFilterBtn");
+// // chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+// //   console.log(message); // logs "Hello from background!"
+// // });
 
-      console.log(filterBtnExists);
-    }
-  });
-})();
+// const linkTags = document.getElementById('endpoint');
+
+// console.log(linkTags);
+
+// for (let i = 0; i < linkTags.length; i++) {
+//   console.log(linkTags[i]);
+// }

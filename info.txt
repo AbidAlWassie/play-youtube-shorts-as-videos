@@ -1,1 +1,3 @@
 https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCYVf_0t2qsjyHILRsLatlHg&maxResults=100&order=date&key=AIzaSyACbTSrKqOeThR03O3_4K5RU_K2eziuG1w
+
+https://youtube.googleapis.com/youtube/v3/search?part=snippet%2CcontentDetails&channelId=UCYVf_0t2qsjyHILRsLatlHg&key=AIzaSyACbTSrKqOeThR03O3_4K5RU_K2eziuG1w

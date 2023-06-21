@@ -3,15 +3,16 @@
   "name": "YT Extension",
   "version": "0.1.0",
   "description": "This extension works with YT videos page.",
-  "permissions": ["storage", "tabs"],
+  "permissions": ["tabs", "scripting", "storage"],
   "host_permissions": ["https://*.youtube.com/*"],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://*.youtube.com/*"],
+      "matches": ["https://www.youtube.com/shorts/*"],
       "js": ["contentScript.js"],
+      "css": ["style.css"],
       "run_at": "document_idle"
     }
   ],
